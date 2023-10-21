@@ -1,7 +1,13 @@
-const { bollywood, hollywood, technology, fitness, food } = require("../dummydata/alldata")
+const { bollywood, hollywood, technology, fitness, food, home } = require("../dummydata/alldata")
 
+
+
+      const data_from_Home= (req,res)=>{
+        return res.send(home)
+      }
     const data_From_Bollywood = (req,res)=>{
-       return res.send(bollywood)
+      
+       return res.send(data)
     }
 
     const data_from_Hollywood = (req,res)=>{
@@ -18,4 +24,4 @@ const { bollywood, hollywood, technology, fitness, food } = require("../dummydat
       return  res.send (food)
     }
 
-    module.exports = {data_From_Bollywood,data_from_Hollywood,data_From_Technology,data_From_Fitness,data_from_Food}
+    module.exports = {data_from_Home,data_From_Bollywood,data_from_Hollywood,data_From_Technology,data_From_Fitness,data_from_Food}

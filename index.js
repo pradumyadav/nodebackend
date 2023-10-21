@@ -14,7 +14,7 @@ const app = express();
             }))
 
 
-app.use("/api",allroutes)
+app.use("/api",allroutes) // http://localhost:4001/api/bollywood/:id
 
 app.get("/", (req,res)=>{
     res.send("Pradum")

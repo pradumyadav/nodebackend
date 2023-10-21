@@ -1,10 +1,10 @@
 
-const {data_From_Bollywood,data_from_Hollywood,data_From_Technology,data_From_Fitness,data_from_Food}= require("../controller/controller")
+const {data_From_Bollywood,data_from_Hollywood,data_From_Technology,data_From_Fitness,data_from_Food, data_from_Home}= require("../controller/controller")
 
 
 const allroutes=require("express").Router()
 
-
+allroutes.get("/home",data_from_Home)
 allroutes.get("/bollywood",data_From_Bollywood)
 
 allroutes.get("/hollywood", data_from_Hollywood)
