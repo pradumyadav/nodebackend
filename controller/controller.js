@@ -7,7 +7,7 @@ const { bollywood, hollywood, technology, fitness, food, home } = require("../du
       }
     const data_From_Bollywood = (req,res)=>{
       
-       return res.send(data)
+       return res.send(bollywood)
     }
 
     const data_from_Hollywood = (req,res)=>{
